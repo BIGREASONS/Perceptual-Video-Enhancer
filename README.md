@@ -64,6 +64,11 @@ All processing is performed locally in the browser.
 - `activeTab`: Access video on current tab only
 - `scripting`: Inject content scripts
 
+## Privacy
+
+This extension does not collect, store, or transmit personal data.
+All processing occurs locally in the browser.
+
 ## License
 
 MIT License - Free to use and modify.
