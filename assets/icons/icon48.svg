@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="grad48" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect x="4" y="8" width="40" height="32" rx="4" fill="url(#grad48)"/>
+  <!-- Wave accent -->
+  <path d="M4 30 Q14 24 24 30 T44 30" stroke="rgba(255,255,255,0.3)" stroke-width="3" fill="none"/>
+  <polygon points="18,16 32,24 18,32" fill="white"/>
+</svg>

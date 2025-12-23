@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Enhance</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+          <path d="M10 9L15 12L10 15V9Z" fill="currentColor"/>
+        </svg>
+        <span class="logo-text">Video Enhance</span>
+      </div>
+      <label class="toggle-switch">
+        <input type="checkbox" id="enableToggle">
+        <span class="slider"></span>
+      </label>
+    </header>
+
+    <!-- Status -->
+    <section class="status-section">
+      <div class="status-indicator" id="statusIndicator">
+        <span class="status-dot"></span>
+        <span class="status-text" id="statusText">Detecting videos...</span>
+      </div>
+      <div class="video-info" id="videoInfo">
+        <div class="quality-meter">
+          <div class="quality-label">Quality Score</div>
+          <div class="quality-bar">
+            <div class="quality-fill" id="qualityFill"></div>
+          </div>
+          <div class="quality-value" id="qualityValue">--</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preset Selector -->
+    <section class="preset-section">
+      <label class="section-label">Enhancement Preset</label>
+      <div class="preset-grid" id="presetGrid">
+        <button class="preset-btn" data-preset="clean">
+          <span class="preset-icon">✨</span>
+          <span class="preset-name">Clean</span>
+          <span class="preset-desc">Minimal</span>
+        </button>
+        <button class="preset-btn active" data-preset="low-bitrate">
+          <span class="preset-icon">🔧</span>
+          <span class="preset-name">Repair</span>
+          <span class="preset-desc">Low-bitrate</span>
+        </button>
+        <button class="preset-btn" data-preset="anime">
+          <span class="preset-icon">🎨</span>
+          <span class="preset-name">Anime</span>
+          <span class="preset-desc">Flat-color</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+      <details class="info-details">
+        <summary class="info-summary">What does this do?</summary>
+        <div class="info-content">
+          <p>This extension applies lightweight post-processing to HTML5 videos:</p>
+          <ul>
+            <li><strong>Debanding:</strong> Reduces color banding in gradients</li>
+            <li><strong>Smoothing:</strong> Gently reduces compression block artifacts</li>
+            <li><strong>Sharpening:</strong> Adds subtle edge enhancement</li>
+          </ul>
+          <p class="info-note">⚠️ This is perceptual enhancement, not AI upscaling. It cannot add detail that isn't there.</p>
+        </div>
+      </details>
+    </section>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
